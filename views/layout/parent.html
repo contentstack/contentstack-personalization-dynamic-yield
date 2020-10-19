@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+
+<head>
+  <title>Sample App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/static/css/bootstrap.css" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script type="text/javascript" src="https://cdn.dynamicyield.com/api/8774193/api_dynamic.js"></script>
+  <script type="text/javascript" src="https://cdn.dynamicyield.com/api/8774193/api_static.js"></script>
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/script.js"></script>
+</head>
+
+<body>
+
+  {% include "partials/header.html" %}
+
+  {% block main_body %}{% endblock %}
+
+  {% include "partials/footer.html" %}
+
+</body>
+
+</html>

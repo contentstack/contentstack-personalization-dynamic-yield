@@ -1,0 +1,30 @@
+{
+  "name": "@contentstack/contentstack-personalization-dynamic-yield",
+  "description": "This guide is for Contentstack Personalization using Dynamic Yield",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "Contentstack",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.1",
+    "basic-auth-connect": "^1.0.0",
+    "contentstack": "^3.4.1",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "^1.9.1",
+    "nunjucks": "^3.2.1",
+    "path": "^0.12.7",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.8",
+    "response-time": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0"
+  }
+}
