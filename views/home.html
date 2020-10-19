@@ -1,0 +1,29 @@
+{% extends "layout/parent.html" %}
+{% block main_body %}
+{% set entry = home %}
+{% set banner = banner %}
+
+<section>
+  <div class="wrapper">
+    <div class="main-container">
+      <div class="home-hero-bg hero-bg" id="home" style="background-image:url({{banner.backgroundImage}})">
+        <div class="background-overlay"></div>
+        <div class="aligned-container typed-container">
+          <div class="container">
+            <div class="typing-block">
+              <div class="typing-block">
+                {{banner.mainText}}
+              </div>
+            </div>
+            <p>{{banner.secondaryText}}</p>
+            <a href="/" class="btn btn-primary mrm">
+              {{banner.buttonText}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

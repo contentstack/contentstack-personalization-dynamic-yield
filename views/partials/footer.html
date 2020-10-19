@@ -1,0 +1,19 @@
+{% set footer = footer[0][0] %}
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        {% for footer in footer.footer_section.footer_menu %}
+        <div class="col-sm-6 col-md-4">
+          <h5>{{footer.title}}</h5>
+          {{footer.footer_content}}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <span>{{footer.copy_rights}}</span>
+  </div>
+</footer>

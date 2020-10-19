@@ -1,0 +1,44 @@
+{% set header = header[0][0] %}
+
+<header class="header header-animated opaque" style="display: block; padding-top: 5px; padding-bottom:5px">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="logo" href={{header.logo.link.href}}>
+          <img class="img-responsive logo" src={{header.logo.color_image.url}} alt="" data-logo-alt={{header.logo.image.url}}
+            data-logo-default={{header.logo.color_image.url}} />
+        </a>
+      </div>
+      <div class="nav-toggle collapsed" data-toggle="collapse" data-target="#navbarMain" aria-expanded="false"
+        style="top: 15px;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar-collapse collapse in" id="navbarMain" aria-expanded="true" style="top: 65px;">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <button class="btn btn-primary-outline" id="signup" onClick={this.onOpenModal}>
+              {{header.cta[0].title}}
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-primary-outline" id="login" onClick={this.onOpenModalLogin}>
+              {{header.cta[1].title}}
+            </button>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav collapsed-color">
+          {% for navLink in header.navigation_section.navigation_bar %}
+          <li>
+            <a href="/" class="nav-link">{{navLink.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
