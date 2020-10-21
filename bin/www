@@ -5,17 +5,13 @@
  */
 var debug = require('debug')('sample-app:server');
 var http = require('http');
-var path = require('path');
-
 var app = require('../app');
-var env = process.env.NODE_ENV || 'development';
-var config = require(path.join('..', 'config', env));
 
 /**
  * Get port from environment and store in Express.
  */
 
-port = normalizePort(process.env.PORT || config.port);
+port = normalizePort(process.env.PORT || 4000);
 app.set('port', port);
 
 /**

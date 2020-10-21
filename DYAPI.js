@@ -1,15 +1,13 @@
 const request = require('request-promise-native');
-var env = process.env.NODE_ENV || 'development';
-var config = require('./config/' + env);
 
 // DY's choose API call 
 async function choose(userId, sessionId, dyContext, selectors = []) {
 
   const options = {
     method: 'POST',
-    uri: `${config.dy.host}/v2/serve/user/choose`,
+    uri: `${process.env.DY_HOST}/v2/serve/user/choose`, 
     headers: {
-      'DY-API-Key': config.dy.apiKey,
+      'DY-API-Key': process.env.DY_API_KEY
     },
     body: {
       selector: {
