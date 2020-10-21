@@ -7,7 +7,9 @@ const cookieParser = require('cookie-parser');
 const responseTime = require('response-time');
 const cookieSession = require('cookie-session');
 const uuidv4 = require('uuid/v4');
+const dotenv = require('dotenv');
 
+dotenv.config();
 
 app.use(responseTime({ header: 'x-runtime' }));
 

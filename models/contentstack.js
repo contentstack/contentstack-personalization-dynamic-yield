@@ -1,8 +1,5 @@
 var Contentstack = require('contentstack');
-var path = require('path');
-var env = process.env.NODE_ENV || 'development';
-var config = require(path.join('..', 'config', env));
 
-var Stack = Contentstack.Stack(config.contentstack.apiKey, config.contentstack.deliveryToken, env);
+var Stack = Contentstack.Stack(process.env.CONTENTSTACK_API_KEY, process.env.CONTENTSTACK_DELIVERY_TOKEN, process.env.CONTENTSTACK_PUBLISH_ENVIRONMENT);
 
 module.exports = Stack;
