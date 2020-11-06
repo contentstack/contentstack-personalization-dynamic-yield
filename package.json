@@ -1,6 +1,6 @@
 {
   "name": "@contentstack/contentstack-personalization-dynamic-yield",
-  "description": "This guide is for Contentstack Personalization using Dynamic Yield",
+  "description": "Dynamic Yield implementation on Contentstack-powered websites",
   "version": "1.0.0",
   "private": true,
   "scripts": {

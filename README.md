@@ -12,15 +12,12 @@ In recent times, personalization has become more of a necessity than an option. 
 
 ## Tutorial
 
-In this guide, we have discussed personalization, what it is and how you can implement it on your Contentstack-powered websites using Dynamic Yield. An example banner variation is shown below :
+In this guide, we have discussed personalization, what it is and how you can implement it on your Contentstack-powered websites using Dynamic Yield. We have set up a system in such a way that on every page refresh, the variation changes as shown below:
 
-![Screenshot from 2020-05-14 15-29-21](https://user-images.githubusercontent.com/29656920/81922895-6b226400-95fa-11ea-9b01-c894a7605042.png)
-
-![Screenshot from 2020-05-14 15-29-57](https://user-images.githubusercontent.com/29656920/81923025-a6249780-95fa-11ea-9089-4598abb79d7f.png)
-
+![Screenshot from 2020-05-14 15-29-21](https://user-images.githubusercontent.com/38778606/98209407-d8d59a00-1f64-11eb-9887-9c115391e5a9.gif)
 
 ## Documentation
 
 Read Contentstack [docs](https://www.contentstack.com/docs/)
 
-Learn about [Implementing Personalization Using Dynamic Yield on Your Website]()
+Learn about [Implementing Personalization Using Dynamic Yield on Your Website](https://www.contentstack.com/docs/developers/how-to-guides/implementing-personalization-using-dynamic-yield-on-your-website/)
